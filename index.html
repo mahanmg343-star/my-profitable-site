@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>من فرانت‌اند دولوپرم</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+        }
+        .dark-mode {
+            background: #2c3e50;
+            color: white;
+        }
+        .dark-mode .container {
+            background: #34495e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>سلام! من [اسم تو] هستم</h1>
+        <p><strong>Front-End Developer in progress</strong></p>
+        
+        <p>من عاشق کد زدن با JavaScript خالص هستم. الان دارم قدم‌به‌قدم جلو می‌رم تا تبدیل به یک فرانت‌اند دولوپر حرفه‌ای بشم.</p>
+        
+        <p>🔹 مدرکم در راه است<br>
+        🔹 جویای کارآموزی فرانت‌اند<br>
+        🔹 هر روز یه قدم جلوتر</p>
+        
+        <a href="#" class="btn" id="githubBtn">گیت‌هاب من</a>
+        <a href="#" class="btn" id="linkedinBtn">لینکدین من</a>
+        
+        <br>
+        <button class="btn" id="themeBtn">🌙 تغییر تم</button>
+        
+        <footer>
+            هر روز یک قدم جلوتر 🚀
+        </footer>
+    </div>
+
+    <script>
+        // تغییر تم (روشن/تاریک)
+        const themeBtn = document.getElementById('themeBtn');
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if(document.body.classList.contains('dark-mode')) {
+                themeBtn.textContent = '☀️ تغییر تم';
+            } else {
+                themeBtn.textContent = '🌙 تغییر تم';
+            }
+        });
+        
+        // اینجا بعداً لینک‌های واقعی گیت‌هاب و لینکدین رو اضافه می‌کنی
+        document.getElementById('githubBtn').addEventListener('click', () => {
+            alert('لینک گیت‌هابت رو اینجا بذار');
+        });
+        
+        document.getElementById('linkedinBtn').addEventListener('click', () => {
+            alert('لینک لینکدینت رو اینجا بذار');
+        });
+    </script>
+</body>
+</html>
