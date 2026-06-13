@@ -1,89 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>من فرانت‌اند دولوپرم</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #c3e50;
-        }
-        .btn {
-            display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 10px 20px;
-            margin: 10px 5px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .btn:hover {
-            background: #2980b9;
-        }
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #7f8c8d;
-        }
-        .dark-mode {
-            background: #2c3e50;
-            color: white;
-        }
-        .dark-mode .container {
-            background: #34495e;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>سلام! من ماهان هستم</h1>
-        <p><strong>Front-End Developer in progress</strong></p>
-        
-        <p>من عاشق کد زدن هستم. الان دارم قدم‌به‌قدم جلو می‌رم تا تبدیل به یک فرانت‌اند دولوپر حرفه‌ای بشم.</p>
-        
-        <p>🔹 مدرکم در راه است<br>
-        🔹 جویای کارآموزی فرانت‌اند<br>
-        🔹 هر روز یه قدم جلوتر</p>
-        
-        <!-- <a href="https://github.com/mahanmg343-star/my-profitable-site/edit/main/index.html" class="btn" id="">گیت‌هاب </a>
-        <a href="#" class="btn" id="linkedinBtn">لینکدین</a> -->
-        
-        <br>
-        <button class="btn" id="themeBtn">🌙 تغییر تم</button>
-        
-        <footer>
-            هر روز یک قدم جلوتر 🚀
-        </footer>
-    </div>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <script>
-        // تغییر تم (روشن/تاریک)
-        const themeBtn = document.getElementById('themeBtn');
-        themeBtn.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            if(document.body.classList.contains('dark-mode')) {
-                themeBtn.textContent = '☀️ تغییر تم';
-            } else {
-                themeBtn.textContent = '🌙 تغییر تم';
-            }
-        });
-        });
-    </script>
-</body>
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+   
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  </body>
 </html>
